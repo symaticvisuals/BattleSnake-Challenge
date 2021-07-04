@@ -103,8 +103,8 @@ public class Snake {
             response.put("apiversion", "1");
             response.put("author", "symaticvisuals");           // TODO: Your Battlesnake Username
             response.put("color", "#000000");     // TODO: Personalize
-            response.put("head", "default");  // TODO: Personalize
-            response.put("tail", "default");  // TODO: Personalize
+            response.put("head", "beluga");  // TODO: Personalize
+            response.put("tail", "curled");  // TODO: Personalize
             return response;
         }
 
@@ -151,7 +151,7 @@ public class Snake {
 
             // Choose a random direction to move in
             int choice = new Random().nextInt(possibleMoves.length);
-            String move = possibleMoves[1];
+            String move = possibleMoves[choice];
 
             LOG.info("MOVE {}", move);
 
