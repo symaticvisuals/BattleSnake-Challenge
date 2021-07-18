@@ -102,7 +102,7 @@ public class Snake {
             Map<String, String> response = new HashMap<>();
             response.put("apiversion", "1");
             response.put("author", "symaticvisuals");         
-            response.put("color", "#48318F");  
+            response.put("color", "#483183");  
             response.put("head", "viper"); 
             response.put("tail", "weight");
             return response;
