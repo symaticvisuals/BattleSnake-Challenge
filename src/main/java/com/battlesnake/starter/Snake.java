@@ -152,7 +152,7 @@ public class Snake {
 
             // Choose a random direction to move in
             int choice = new Random().nextInt(possibleMoves.length);
-            String move = possibleMoves[choice];
+            String move = "up";
 
             LOG.info("MOVE {}", move);
 
@@ -160,6 +160,10 @@ public class Snake {
             response.put("move", move);
             System.out.println(move);
             return response;
+        }
+
+        public String safeMoves(JsonNode moveRequest){
+          return "up";
         }
 
         /**
