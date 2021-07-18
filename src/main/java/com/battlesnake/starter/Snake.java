@@ -101,10 +101,10 @@ public class Snake {
         public Map<String, String> index() {         
             Map<String, String> response = new HashMap<>();
             response.put("apiversion", "1");
-            response.put("author", "symaticvisuals");           // TODO: Your Battlesnake Username
-            response.put("color", "#48318F");     // TODO: Personalize
-            response.put("head", "viper");  // TODO: Personalize
-            response.put("tail", "weight");  // TODO: Personalize
+            response.put("author", "symaticvisuals");         
+            response.put("color", "#48318F");  
+            response.put("head", "viper"); 
+            response.put("tail", "weight");
             return response;
         }
 
@@ -118,7 +118,8 @@ public class Snake {
          * @return responses back to the engine are ignored.
          */
         public Map<String, String> start(JsonNode startRequest) {
-            LOG.info("START");
+            LOG.info(startRequest.toString());
+
             return EMPTY;
         }
 
